@@ -1,5 +1,5 @@
 {% set name = "asf_search" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 044ca3cf0443452c0b82da8af9f79a8ad4f22f6b1c33085c970427c92dc0f8a4
+  sha256: 2e5ca241fbd77a9e9c6cd07af015dbea44b3181a155b2701fe2e346df6afdb62
 
 build:
   noarch: python
