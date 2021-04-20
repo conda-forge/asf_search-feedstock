@@ -23,6 +23,8 @@ requirements:
   run:
     - python >=3.6
     - numpy
+    - python-dateutil
+    - pytz
     - requests
 
 test:
