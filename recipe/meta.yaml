@@ -26,6 +26,7 @@ requirements:
     - python-dateutil
     - pytz
     - requests
+    - importlib_metadata
 
 test:
   imports:
