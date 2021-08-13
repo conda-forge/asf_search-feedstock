@@ -1,5 +1,5 @@
 {% set name = "asf_search" %}
-{% set version = "3.0.2" %}
+{% set version = "3.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 77fac616b90989fc8da1507c4960f5fe90b3af478a5e9abd3b38a61618bd5fd7
+  sha256: c1d13b90fa15fc370525d396d9a0c9ae3af853142f2dc38765d2cda5f3211ce5
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - wheel
   run:
     - python >=3.6
-    - numpy
+    - shapely
     - python-dateutil
     - pytz
     - requests
