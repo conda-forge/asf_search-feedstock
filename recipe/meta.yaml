@@ -22,13 +22,12 @@ requirements:
     - wheel
   run:
     - python >=3.6
-    - importlib_metadata
-    - numpy
-    - python-dateutil
-    - pytz
     - requests
     - shapely
-    
+    - python-dateutil
+    - pytz
+    - importlib_metadata
+    - numpy
 
 test:
   imports:
