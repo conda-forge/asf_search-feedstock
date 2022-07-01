@@ -1,5 +1,5 @@
 {% set name = "asf_search" %}
-{% set version = "3.2.2" %}
+{% set version = "4.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a4d428c3d41c51b7f610e8eb204f3668b0e94d2f8e89a3442c10fd0ebf92ad61
+  sha256: 04bc4c96892282b40ab9b6f6b20800018b725d8d6df47b2625708a779b9c1901
 
 build:
   noarch: python
@@ -27,12 +27,17 @@ requirements:
     - python-dateutil
     - pytz
     - importlib_metadata
+    - scikit-learn
     - numpy
+    - dateparser
 
 test:
   imports:
     - asf_search
-
+  requires:
+    - pip
+  commands:
+    - pip check
 about:
   home: https://github.com/asfadmin/Discovery-asf_search
   license: BSD-3-Clause
