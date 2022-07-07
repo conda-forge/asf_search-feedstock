@@ -1,5 +1,5 @@
 {% set name = "asf_search" %}
-{% set version = "4.0.1" %}
+{% set version = "4.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 04bc4c96892282b40ab9b6f6b20800018b725d8d6df47b2625708a779b9c1901
+  sha256: d9d596b22f099abf3ab61295c2d044f6f4e0fd7540a3f4a9a972e0dd6a9da764
 
 build:
   noarch: python
@@ -27,7 +27,6 @@ requirements:
     - python-dateutil
     - pytz
     - importlib_metadata
-    - scikit-learn
     - numpy
     - dateparser
 
