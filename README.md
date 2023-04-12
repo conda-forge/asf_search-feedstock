@@ -1,11 +1,11 @@
-About asf_search
-================
+About asf_search-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/asf_search-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/asfadmin/Discovery-asf_search
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/asf_search-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python wrapper for ASF's SearchAPI
 
