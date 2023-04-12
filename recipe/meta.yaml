@@ -1,5 +1,5 @@
 {% set name = "asf_search" %}
-{% set version = "6.0.2" %}
+{% set version = "6.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 38bc19e341d943c400c027231e7205008bfdbd3ca2282d36d737d0d03afaa01a
+  sha256: a82f7900fc2b54ab8006005ab21ea907edf911b0f577daa56d47ad59d4612623
 
 build:
   noarch: python
@@ -31,6 +31,7 @@ requirements:
     - numpy
     - dateparser >=1.1.1
     - jinja2
+    - markupsafe <=2.0.1  # jinja2 requires this version for soft_unicode
     - remotezip >=0.10.0
 
 test:
