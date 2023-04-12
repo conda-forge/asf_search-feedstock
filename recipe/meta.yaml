@@ -31,6 +31,7 @@ requirements:
     - numpy
     - dateparser >=1.1.1
     - jinja2
+    - markupsafe <=2.0.1  # jinja2 requires this version for soft_unicode
     - remotezip >=0.10.0
 
 test:
