@@ -31,6 +31,7 @@ requirements:
     - numpy
     - dateparser >=1.1.1
     - remotezip >=0.10.0
+    - tenacity ==8.2.2
 
 test:
   imports:
