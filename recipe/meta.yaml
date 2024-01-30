@@ -13,7 +13,8 @@ build:
   noarch: python
   number: 1
 
-# This *really* shouldn't be necessary
+# This *really* shouldn't be necessary; see flailing here:
+# https://github.com/conda-forge/asf_search-feedstock/pull/57
 requirements:
   host:
     - python >=3.8
