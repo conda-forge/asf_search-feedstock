@@ -2,7 +2,7 @@
 {% set version = "7.0.1" %}
 
 package:
-  name: {{ name|lower }}
+  name: {{ name|lower }}-meta
   version: {{ version }}
 
 source:
@@ -14,6 +14,8 @@ build:
 
 outputs:
   - name: asf_search-base
+    about:
+      description: asf_search without any optional extra packages
     build:
       noarch: python
       script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
@@ -44,6 +46,8 @@ outputs:
         - python -c 'from asf_search.download import download; assert download.RemoteZip is None'
 
   - name: asf_search
+    about:
+      description: asf_search with all optional extra packages
     build:
       noarch: python
     requirements:
@@ -67,6 +71,7 @@ about:
   summary: Python wrapper for ASF's SearchAPI
 
 extra:
+  feedstock-name: asf_search
   recipe-maintainers:
     - jhkennedy
     - glshort
