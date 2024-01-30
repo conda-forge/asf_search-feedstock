@@ -15,7 +15,8 @@ build:
 
 outputs:
   - name: asf_search-base
-    noarch: python
+    build:
+      noarch: python
     script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
     requirements:
       host:
@@ -44,6 +45,8 @@ outputs:
         - python -c 'from asf_search.download import download; assert download.RemoteZip is None'
 
   - name: asf_search
+    build:
+      noarch: python
     requirements:
       host:
         - python >=3.8
