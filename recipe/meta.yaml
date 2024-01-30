@@ -10,6 +10,7 @@ source:
   sha256: 8670432a95959af4a98d6cbeb1f016e47614e280685f5648293a4f9161b795e2
 
 build:
+  noarch: python
   number: 1
 
 outputs:
@@ -18,7 +19,7 @@ outputs:
       description: asf_search without any optional extra packages
     build:
       noarch: python
-      script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+      script: "{{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation"
     requirements:
       host:
         - python >=3.8
@@ -43,7 +44,7 @@ outputs:
         - pip
       commands:
         - pip check
-        - python -c 'from asf_search.download import download; assert download.RemoteZip is None'
+        - "python -c 'from asf_search.download import download; assert download.RemoteZip is None'"
 
   - name: asf_search
     about:
@@ -61,7 +62,7 @@ outputs:
       imports:
         - asf_search
       commands:
-        - python -c 'from asf_search.download import download; assert download.RemoteZip is not None'
+        - "python -c 'from asf_search.download import download; assert download.RemoteZip is not None'"
 
 about:
   home: https://github.com/asfadmin/Discovery-asf_search
