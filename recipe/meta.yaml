@@ -40,12 +40,12 @@ outputs:
         - python >=3.8
         - requests
         - shapely
-        - python-dateutil
         - pytz
         - importlib_metadata
         - numpy
         - dateparser
         - tenacity ==8.2.2
+        - ciso8601
     test:
       imports:
         - asf_search
