@@ -1,5 +1,5 @@
 {% set name = "asf_search" %}
-{% set version = "8.0.1" %}
+{% set version = "8.1.1" %}
 
 package:
   name: {{ name|lower }}-meta
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 45128f8b12a7b2b67dee9dffcd043f9582e76462dce0f5f095156501fd568596
+  sha256: 412c5b20d3803bdd59fb45d6419d7bf6e91eae5a3434dd249bd61ec00a2e1025
 
 build:
   noarch: python
-  number: 1
+  number: 0
 
 # This *really* shouldn't be necessary; see flailing here:
 # https://github.com/conda-forge/asf_search-feedstock/pull/57
