@@ -13,15 +13,6 @@ Package license: BSD-3-Clause
 
 Summary: Python wrapper for ASF's SearchAPI
 
-About asf_search-base
----------------------
-
-
-
-Package license: 
-
-asf_search without any optional extra packages
-
 About asf_search
 ----------------
 
@@ -30,6 +21,15 @@ About asf_search
 Package license: 
 
 asf_search with all optional extra packages
+
+About asf_search-base
+---------------------
+
+
+
+Package license: 
+
+asf_search without any optional extra packages
 
 Current build status
 ====================
@@ -49,8 +49,8 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-asf_search-green.svg)](https://anaconda.org/conda-forge/asf_search) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/asf_search.svg)](https://anaconda.org/conda-forge/asf_search) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/asf_search.svg)](https://anaconda.org/conda-forge/asf_search) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/asf_search.svg)](https://anaconda.org/conda-forge/asf_search) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-asf_search--base-green.svg)](https://anaconda.org/conda-forge/asf_search-base) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/asf_search-base.svg)](https://anaconda.org/conda-forge/asf_search-base) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/asf_search-base.svg)](https://anaconda.org/conda-forge/asf_search-base) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/asf_search-base.svg)](https://anaconda.org/conda-forge/asf_search-base) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-asf__search-green.svg)](https://anaconda.org/conda-forge/asf_search) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/asf_search.svg)](https://anaconda.org/conda-forge/asf_search) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/asf_search.svg)](https://anaconda.org/conda-forge/asf_search) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/asf_search.svg)](https://anaconda.org/conda-forge/asf_search) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-asf__search--base-green.svg)](https://anaconda.org/conda-forge/asf_search-base) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/asf_search-base.svg)](https://anaconda.org/conda-forge/asf_search-base) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/asf_search-base.svg)](https://anaconda.org/conda-forge/asf_search-base) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/asf_search-base.svg)](https://anaconda.org/conda-forge/asf_search-base) |
 
 Installing asf_search
 =====================
