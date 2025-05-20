@@ -15,10 +15,13 @@ build:
 
 # This *really* shouldn't be necessary; see flailing here:
 # https://github.com/conda-forge/asf_search-feedstock/pull/57
+# Also, setuptools was added to `host` to satisfy the linter, which also shouldn't be necessary:
+# https://github.com/conda-forge/asf_search-feedstock/pull/79#issuecomment-2895721651
 requirements:
   host:
     - python {{ python_min }}
     - pip
+    - setuptools
   run:
     - python >={{ python_min }}
 
@@ -41,7 +44,7 @@ outputs:
         - requests
         - shapely
         - pytz
-        - importlib_metadata
+        - importlib-metadata
         - numpy
         - dateparser
         - tenacity ==8.2.2
