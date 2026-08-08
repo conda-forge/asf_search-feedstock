@@ -63,31 +63,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `asf_search, asf_search-base` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install asf_search asf_search-base
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install asf_search asf_search-base
 ```
 
-It is possible to list all of the versions of `asf_search` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add asf_search asf_search-base
+# for installing globally
+pixi global install asf_search asf_search-base
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `asf_search` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search asf_search --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search asf_search --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search asf_search --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -99,6 +141,8 @@ mamba repoquery whoneeds asf_search --channel conda-forge
 # List dependencies of `asf_search`:
 mamba repoquery depends asf_search --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
