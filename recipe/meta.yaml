@@ -1,5 +1,5 @@
 {% set name = "asf_search" %}
-{% set version = "14.1.0" %}
+{% set version = "14.1.1" %}
 
 package:
   name: {{ name|lower }}-meta
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1f9638a435540290898fc36a7393cedb4b3a551947ab9aceed0b8311b370da89
+  sha256: 5ef8d3e28b18bcef83c70f2780adddd139f481c6cfaeab98ae8919ead1086a05
 
 build:
   noarch: python
